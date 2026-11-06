@@ -1,0 +1,35 @@
+name: Epic
+description: A shippable body of work; parent of Features, Tasks and Bugs
+title: "[Epic]: "
+type: Epic
+body:
+  - type: markdown
+    attributes:
+      value: After creating the Epic, attach its Features, Tasks and Bugs as sub-issues and link it to a parent Initiative.
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Outcome
+      description: What will be true for users when this Epic ships?
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope
+      description: The pieces of work included (convert to sub-issues as they are created).
+      value: |
+        - [ ] 
+        - [ ] 
+    validations:
+      required: true
+  - type: textarea
+    id: out-of-scope
+    attributes:
+      label: Out of scope
+      description: What is explicitly not part of this Epic.
+  - type: textarea
+    id: metrics
+    attributes:
+      label: Success metrics
+      description: How will we measure success after shipping?

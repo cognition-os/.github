@@ -1,0 +1,25 @@
+name: Task
+description: A specific, well-scoped piece of work
+title: "[Task]: "
+type: Task
+body:
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: Why does this need doing? Link the parent Epic or related issues.
+    validations:
+      required: true
+  - type: textarea
+    id: todo
+    attributes:
+      label: Definition of done
+      value: |
+        - [ ] 
+        - [ ] 
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes / links
